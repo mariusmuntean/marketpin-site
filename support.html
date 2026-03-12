@@ -3,23 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Market Pin Support</title>
+  <title>Support — Market Pin</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Support</h1>
-    <h2>Frequently Asked Questions</h2>
-    <dl>
-      <dt>How do I change the tracked symbol?</dt>
-      <dd>Quit the app, relaunch with a different symbol configured, or wait for a settings UI in a future version.</dd>
-      <dt>Why is the price delayed?</dt>
-      <dd>Market data is sourced from Yahoo Finance and may be delayed by up to 15 minutes depending on the exchange.</dd>
-      <dt>The app shows "€ --" — what's wrong?</dt>
-      <dd>The app could not reach Yahoo Finance. Check your internet connection and try refreshing with ⌘R.</dd>
-    </dl>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:marketpin.support@outlook.com">marketpin.support@outlook.com</a></p>
-    <p>Include your macOS version and app version when reporting an issue.</p>
-  </main>
+  <div class="container">
+
+    <header class="page-header">
+      <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Market Pin
+      </a>
+      <h1>Support</h1>
+    </header>
+
+    <div class="prose">
+
+      <section>
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+
+          <details class="faq-item">
+            <summary>How do I change the tracked symbol?</summary>
+            <div class="faq-answer">
+              Symbol configuration will be available in a future settings UI. In the meantime, quit the app and relaunch with a different symbol configured via the environment variable.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Why is the price delayed?</summary>
+            <div class="faq-answer">
+              Market data is sourced from Yahoo Finance and may be delayed by up to 15 minutes depending on the exchange. This is a limitation of the data source, not the app.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>The app shows "€ --" — what's wrong?</summary>
+            <div class="faq-answer">
+              The app could not reach Yahoo Finance. Check your internet connection and try refreshing with <kbd>⌘R</kbd>.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What keyboard shortcuts are available?</summary>
+            <div class="faq-answer">
+              <kbd>⌘R</kbd> refreshes quote and chart data, <kbd>Esc</kbd> closes the popover, and <kbd>⌘Q</kbd> quits the app.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I change the appearance?</summary>
+            <div class="faq-answer">
+              Click the theme icon in the bottom-left of the popover to switch between automatic, light, and dark appearance.
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <div class="contact-card">
+          <p>Email <a href="mailto:marketpin.support@outlook.com">marketpin.support@outlook.com</a> — please include your macOS version and a description of the issue.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="site-footer">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </footer>
+
+  </div>
 </body>
 </html>
